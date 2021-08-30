@@ -1,0 +1,1 @@
+{"version":3,"file":"bundle.js","mappings":";;;;;;AAAa;AACb;AACA;AACA;AACA;AACA","sources":["webpack://webpack-typescript-scss-template/./src/index.ts"],"sourcesContent":["\"use strict\";\nvar person = \"Nicolas\";\nvar sayHello = function (person) {\n    console.log(person);\n};\nsayHello(person);\n"],"names":[],"sourceRoot":""}
