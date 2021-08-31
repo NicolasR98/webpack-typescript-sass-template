@@ -1,7 +1,5 @@
-const person: string = "Nicolas";
+import "./style.scss";
 
-const sayHello = (person: string): void => {
-  console.log(person);
-};
-
-sayHello(person);
+const header = document.querySelector("h1");
+const headline: string = "Welcome to the template!";
+if (header) header.innerText = headline;
