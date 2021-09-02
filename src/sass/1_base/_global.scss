@@ -1,0 +1,20 @@
+@use "./colors" as *;
+@use "./typography" as *;
+@use "../2_utils/functions" as *;
+@use "../2_utils/mixins" as *;
+
+:root {
+  color: $dark-1;
+  font-size: $font-size-base;
+  font-weight: weight(super-light);
+}
+
+body {
+  @include flex(0, center, center);
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+button {
+    cursor: pointer;
+}

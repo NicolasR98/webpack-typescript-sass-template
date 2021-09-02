@@ -1,17 +1,39 @@
-/*!*********************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/style.scss ***!
-  \*********************************************************************************************************/
+/*!**************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/sass/style.scss ***!
+  \**************************************************************************************************************/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
 :root {
-  --mainBG: salmon;
+  color: #262627;
+  font-size: 16px;
+  font-weight: 100;
 }
 
 body {
-  background-color: var(--mainBG);
-  color: moccasin;
+  display: flex;
+  flex-direction: 0;
+  align-items: center;
+  justify-content: center;
+  min-width: 100%;
+  min-height: 100vh;
 }
-body h1 {
-  font-size: 68px;
-  text-align: center;
+
+button {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map*/

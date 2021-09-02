@@ -1,0 +1,21 @@
+@use "../1_base/colors" as *;
+
+@mixin flex($orientation: row, $align: stretch, $justify: stretch) {
+  display: flex;
+  flex-direction: $orientation;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin addTransition($props: all, $duration: 250ms, $timing: ease) {
+  transition: $props $duration $timing;
+}
+
+@mixin addBoxShadow(
+  $color: rgba(0, 0, 0, 0.055),
+  $hOffset: 0px,
+  $vOffset: 10px,
+  $blur: 10px
+) {
+  box-shadow: $color $hOffset $vOffset $blur;
+}

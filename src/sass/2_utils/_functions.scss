@@ -1,0 +1,12 @@
+$font-weights: (
+  "super-light": 100,
+  "light": 200,
+  "regular": 300,
+  "medium": 400,
+  "bold": 500,
+  "extra-bold": 600,
+  "super": 700,
+);
+@function weight($weight-name) {
+  @return map-get($font-weights, $weight-name);
+}
