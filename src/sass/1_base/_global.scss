@@ -13,6 +13,7 @@ body {
   @include flex(0, center, center);
   min-width: 100%;
   min-height: 100vh;
+  background: url("../../images/wallpaper.jpg");
 }
 
 button {

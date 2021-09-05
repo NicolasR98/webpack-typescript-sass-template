@@ -24,11 +24,16 @@ module.exports = {
   entry: "./src/index.ts",
   output: {
     filename: "bundle.js",
+    assetModuleFilename: "images/[hash][ext][query]",
     path: path.resolve(__dirname, "dist"),
   },
 
   module: {
     rules: [
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        type: "asset/resource",
+      },
       {
         test: /\.tsx?$/i,
         exclude: /node_modules/,
@@ -41,6 +46,10 @@ module.exports = {
         use: [
           MiniCssExtractPlugin.loader,
           "css-loader",
+          {
+            loader: "resolve-url-loader",
+            options: { sourceMap: true },
+          },
           "postcss-loader",
           "sass-loader",
         ],
